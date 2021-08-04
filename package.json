@@ -1,0 +1,29 @@
+{
+  "main": "index.js",
+  "name": "typescript-app",
+  "version": "1.0.0",
+  "description": "Sahaj Software Assignment for Tiger Card",
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "start:dev": "nodemon",
+    "test:coverage": "nyc -r text -e .ts -x \"tests/*.spec.ts\" npm run test",
+    "build:prod": "tsc -p ."
+  },
+  "keywords": [
+    "typescript",
+    "tiger-card"
+  ],
+  "author": "Rahul Pande<rxpande@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.8.2",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.4.4",
+    "jasmine": "^3.8.0",
+    "mocha": "^9.0.3",
+    "nodemon": "^2.0.12",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}
